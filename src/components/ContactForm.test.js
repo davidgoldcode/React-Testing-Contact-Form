@@ -16,8 +16,7 @@ test('can add details and submit in ContactForm', () => {
     fireEvent.change(email, { target: { value: 'throwaway@aol.com' } });
     fireEvent.change(message, { target: { value: 'Sup' } });
 
-    const submitButton = screen.getByText(/submit/i); // to ask about this
-
-
+    const submitButton = screen.getByText(/submit/i);
+    fireEvent.click(submitButton);
 })
 
